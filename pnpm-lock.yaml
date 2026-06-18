@@ -11,6 +11,9 @@ importers:
       '@base-ui/react':
         specifier: ^1.5.0
         version: 1.5.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@rybbit/js':
+        specifier: ^0.6.2
+        version: 0.6.2
       '@tailwindcss/vite':
         specifier: ^4.3.1
         version: 4.3.1(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.3)(jiti@2.7.0))
@@ -1034,6 +1037,14 @@ packages:
 
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+
+  '@rybbit/js@0.6.2':
+    resolution: {integrity: sha512-UQ3OMau8EevhK1PA6ed74pClNgF3QRG3RlZAsPVzuMZ7UUjk695+sv8ibV1tx8/2IOcfcICNMtUxINcGi20wjg==}
+    peerDependencies:
+      rrweb: ^2.0.0
+    peerDependenciesMeta:
+      rrweb:
+        optional: true
 
   '@sindresorhus/is@7.2.0':
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
@@ -2710,6 +2721,8 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
+
+  '@rybbit/js@0.6.2': {}
 
   '@sindresorhus/is@7.2.0': {}
 

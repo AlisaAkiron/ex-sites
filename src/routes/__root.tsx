@@ -1,4 +1,5 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
+import { RybbitProvider } from '#/lib/rybbit/provider.tsx'
 import { ThemeProvider, themeInitScript } from '#/lib/theme'
 import appCss from '../styles.css?url'
 
@@ -22,7 +23,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <RybbitProvider>{children}</RybbitProvider>
+        </ThemeProvider>
         <Scripts />
       </body>
     </html>
