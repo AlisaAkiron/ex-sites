@@ -1,0 +1,90 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "react", "typescript", "unicorn", "oxc", "import", "jsx-a11y"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "style": "warn"
+  },
+  "rules": {
+    // core
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-null": "off",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "prefer-const": "warn",
+    "no-async-promise-executor": "error",
+    "no-promise-executor-return": "error",
+    "no-named-export": "off",
+    "prefer-default-export": "off",
+    "sort-imports": "off",
+    "sort-keys": "off",
+    "no-namespace": "off",
+    "arrow-body-style": "allow",
+    "func-style": "off",
+    "no-magic-numbers": "off",
+    "group-exports": "off",
+    "no-ternary": "off",
+    "max-statements": "off",
+    "capitalized-comments": "off",
+    "no-await-in-loop": "off",
+    "id-length": "off",
+
+    // unicorn
+    "unicorn/text-encoding-identifier-case": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/prefer-global-this": "off",
+
+    // react
+    "react/no-direct-mutation-state": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/no-unknown-property": "warn",
+    "react/self-closing-comp": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-max-depth": ["warn", { "max": 7 }],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unstable-nested-components": ["warn", { "allowAsProps": true }],
+
+    // jsx-a11y
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+
+    // import
+    "import/no-cycle": "error",
+    "import/no-self-import": "error",
+    "import/exports-last": "off",
+    "import/consistent-type-specifier-style": ["error", "prefer-inline"],
+
+    // typescript
+    "typescript/no-explicit-any": "warn",
+    "typescript/no-non-null-assertion": "warn",
+    "typescript/consistent-type-definitions": "off"
+  },
+  "settings": {
+    "jsx-a11y": {
+      "polymorphicPropName": "as",
+      "components": {},
+      "attributes": {}
+    },
+    "react": {
+      "formComponents": [],
+      "linkComponents": [],
+      "version": "19",
+      "componentWrapperFunctions": []
+    }
+  },
+  "env": {
+    "builtin": true
+  },
+  "globals": {},
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/.tanstack/**",
+    "**/routeTree.gen.ts",
+    ".superpowers/**"
+  ]
+}
