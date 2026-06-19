@@ -20,7 +20,7 @@ export const chinaEx: SiteConfig = {
   regionGroupId: '地区',
   scoreElementId: '分数',
   floatingTextIds: ['标题', '分数'],
-  coverSrc: '/cover/china-ex.png',
+  coverSrc: '/cover/china-ex.webp',
   route: '/china-ex',
   canvas: { w: 1134, h: 976, ratio: 2 },
   credit: { author: 'itorr/china-ex', url: 'https://github.com/itorr/china-ex' },

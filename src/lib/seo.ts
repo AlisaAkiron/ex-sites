@@ -6,7 +6,7 @@ const base = (import.meta.env.APP_URL ?? '').replace(/\/+$/, '')
 export const SITE_URL = base
 const SITE_NAME = '制霸生成器'
 
-const DEFAULT_OG_IMAGE = '/cover/china-ex.png'
+const DEFAULT_OG_IMAGE = '/cover/china-ex.webp'
 
 /** Resolve a path or relative asset against APP_URL. Pass-through for absolute URLs. */
 export function absoluteUrl(path = '/'): string {
