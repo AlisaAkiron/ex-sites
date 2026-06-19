@@ -11,6 +11,7 @@
 | 首页 | `/` | 制霸生成器列表 | — |
 | 中国制霸生成器 | `/china-ex` | 中国三十四省级行政区域制霸标记生成工具 | [itorr](https://github.com/itorr/china-ex) |
 | 吃货制霸生成器 | `/foodie-ex` | 中国各地特色美食制霸标记生成工具 | [lvwzhen](https://github.com/lvwzhen/foodie-ex) |
+| 日本制霸生成器 | `/japan-ex` | 日本四十七都道府县制霸标记生成工具 | [ukyouz](https://github.com/ukyouz/JapanEx) |
 
 ## 开发
 

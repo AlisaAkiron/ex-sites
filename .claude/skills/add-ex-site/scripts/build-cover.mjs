@@ -27,7 +27,8 @@ if (!repoRoot || !siteId || !title || !description) {
 }
 
 const out = outArg ?? join(repoRoot, 'public', 'cover', `${siteId}.webp`)
-const brandBg = '#efb4b4' // china-ex brand background; override if your site differs
+// china-ex brand background; set BRAND_BG to match a site with a different brandBg.
+const brandBg = process.env.BRAND_BG ?? '#efb4b4'
 
 let svg = readFileSync(join(repoRoot, 'src', 'sites', siteId, 'map.svg'), 'utf8')
 const fontB64 = readFileSync(join(repoRoot, 'public', 'fonts', 'zcool-kuaile.ttf')).toString('base64')
