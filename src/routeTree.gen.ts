@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
+import { Route as FoodieExRouteImport } from './routes/foodie-ex'
 import { Route as ChinaExRouteImport } from './routes/china-ex'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
   id: '/robots.txt',
   path: '/robots.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoodieExRoute = FoodieExRouteImport.update({
+  id: '/foodie-ex',
+  path: '/foodie-ex',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChinaExRoute = ChinaExRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/china-ex': typeof ChinaExRoute
+  '/foodie-ex': typeof FoodieExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/china-ex': typeof ChinaExRoute
+  '/foodie-ex': typeof FoodieExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
@@ -51,20 +59,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/china-ex': typeof ChinaExRoute
+  '/foodie-ex': typeof FoodieExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/china-ex' | '/robots.txt' | '/sitemap.xml'
+  fullPaths: '/' | '/china-ex' | '/foodie-ex' | '/robots.txt' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/china-ex' | '/robots.txt' | '/sitemap.xml'
-  id: '__root__' | '/' | '/china-ex' | '/robots.txt' | '/sitemap.xml'
+  to: '/' | '/china-ex' | '/foodie-ex' | '/robots.txt' | '/sitemap.xml'
+  id:
+    | '__root__'
+    | '/'
+    | '/china-ex'
+    | '/foodie-ex'
+    | '/robots.txt'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChinaExRoute: typeof ChinaExRoute
+  FoodieExRoute: typeof FoodieExRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
@@ -83,6 +99,13 @@ declare module '@tanstack/react-router' {
       path: '/robots.txt'
       fullPath: '/robots.txt'
       preLoaderRoute: typeof RobotsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/foodie-ex': {
+      id: '/foodie-ex'
+      path: '/foodie-ex'
+      fullPath: '/foodie-ex'
+      preLoaderRoute: typeof FoodieExRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/china-ex': {
@@ -105,6 +128,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChinaExRoute: ChinaExRoute,
+  FoodieExRoute: FoodieExRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }

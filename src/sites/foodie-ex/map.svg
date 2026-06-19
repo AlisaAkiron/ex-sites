@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 976">
+      <style></style>
+      <style>
+        text {
+          font-family: 'ZCOOLKuaiLe', sans-serif;
+          fill: #111;
+          font-size: 30px;
+        }
+        #title {
+          font-size: 60px;
+        }
+        #分数 {
+          font-size: 60px;
+        }
+        #地区 path,
+        #地区 rect,
+        polyline {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          stroke: #000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        #地区 path,
+        #地区 rect {
+          fill: #fff;
+          cursor: pointer;
+          pointer-events: auto;
+        }
+        polyline {
+          fill: none;
+          pointer-events: none;
+        }
+        #地区 > *[level="5"] {
+          fill: #ff7e7e;
+        }
+        #地区 > *[level="4"] {
+          fill: #ffb57e;
+        }
+        #地区 > *[level="3"] {
+          fill: #ffe57e;
+        }
+        #地区 > *[level="2"] {
+          fill: #a8ffbe;
+        }
+        #地区 > *[level="1"] {
+          fill: #88aeff;
+        }
+        .level-border {
+          fill-rule: evenodd;
+          clip-rule: evenodd;
+          fill: none;
+          stroke: #000000;
+          stroke-width: 4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-miterlimit: 10;
+        }
+      </style>
+      <text x="395" y="119" id="title">🍜吃货制霸</text>
+      <g id="地区">
+        <path id="锅包肉" d="M1100,33v158H894V33H1100z" />
+        <path id="牛肉面" d="M585,191v371H351V191H585z" />
+        <path id="冷面" d="M894,191v85h206v-85H894z" />
+        <path id="烤全羊" d="M894,33H738v158H499v227h227l168-108V33z" />
+        <path id="黄焖鸡" d="M779,446v92h139v-92H779z" />
+        <path id="驴肉火烧" d="M861,310H726v180h117v-95h18V310z" />
+        <path id="烤鸭" d="M763,336h80v52h-80z"/>
+        <path id="煎饼果子" d="M763,388h80v43h-80V388z" />
+        <path id="酥油茶" d="M389,770H35V466h354V770z" />
+        <path id="羊肉串" d="M35,466V87h316v379H35z" />
+        <path id="烩面" d="M779,490H654v117h125V490z" />
+        <path id="牛肉汤" d="M852,538h-73v138h73V538z" />
+        <path id="刀削面" d="M654,418v108h72V418H654z" />
+        <path id="热干面" d="M779,688v-81H654v81H779z" />
+        <path id="青稞" d="M442,626V395H228v231H442z" />
+        <path id="小鸡炖蘑菇" d="M861,276v119h154V276H861z" />
+        <path id="肠粉" d="M823,788H679v81h144V788z" />
+        <path id="大闸蟹" d="M899,538v87h-62v-87H899z" />
+        <path id="瓦罐汤" d="M852,806V676H749v130H852z" />
+        <path id="小笼包" d="M852,625l74,1v107h-74V625z" />
+        <path id="沙县小吃" d="M823,733v107h73V733H823z" />
+        <path id="生煎包" d="M882,602h72v47h-72z"/>
+        <path id="肉夹馍" d="M585,653h69V418h-69V653z" />
+        <path id="臭豆腐" d="M654,688h95v100h-95V688z" />
+        <path id="螺蛳粉" d="M679,788H537v81h142V788z" />
+        <path id="鸡蛋仔" d="M758,856h52v33h-52z"/>
+        <path id="蛋挞" d="M701,856h45v33h-45z"/>
+        <path id="肠旺面" d="M654,709H537v79h117V709z" />
+        <path id="火锅" d="M565,653h89v56h-89z"/>
+        <path id="毛血旺" d="M565,737v-84h20v-91H389v175H565z" />
+        <path id="过桥米线" d="M537,737H389v115h148V737z" />
+        <path id="羊杂碎" d="M585,418h-86v96h86V418z" />
+        <path id="卤肉饭" d="M918,788h45v87h-45z"/>
+        <path id="清补凉" d="M615,897h78v46h-78z"/>
+      </g>
+      <polyline id="曾母暗沙" points="827,941 827,897 908,897 908,941" />
+      <g id="地名">
+        <text x="659" y="266">烤全羊</text>
+        <text x="951" y="123">锅包肉</text>
+        <text x="966" y="242">冷面</text>
+        <text x="875" y="347" style="font-size: 26px">小鸡炖蘑菇</text>
+        <text x="773" y="371">烤鸭</text>
+        <text x="768" y="417" style="font-size: 18px">煎饼果子</text>
+        <text x="745" y="469" style="font-size: 20px">驴肉火烧</text>
+        <text x="861" y="478" style="font-size: 20px">黄</text>
+        <text x="861" y="498" style="font-size: 20px">焖</text>
+        <text x="861" y="518" style="font-size: 20px">鸡</text>
+        <text x="685" y="579">烩面</text>
+        <text x="675" y="658">热干面</text>
+        <text x="690" y="725" style="font-size: 20px">臭</text>
+        <text x="690" y="745" style="font-size: 20px">豆</text>
+        <text x="690" y="765" style="font-size: 20px">腐</text>
+        <text x="853" y="565" style="font-size: 20px">大</text>
+        <text x="853" y="585" style="font-size: 20px">闸</text>
+        <text x="853" y="605" style="font-size: 20px">蟹</text>
+        <text x="888" y="634" style="font-size: 20px">生煎包</text>
+        <text x="872" y="670" style="font-size: 20px">小</text>
+        <text x="872" y="690" style="font-size: 20px">笼</text>
+        <text x="872" y="710" style="font-size: 20px">包</text>
+        <text x="850" y="763" style="font-size: 20px">沙</text>
+        <text x="850" y="783" style="font-size: 20px">县</text>
+        <text x="850" y="803" style="font-size: 20px">小</text>
+        <text x="850" y="823" style="font-size: 20px">吃</text>
+        <text x="930" y="820" style="font-size: 20px">卤</text>
+        <text x="930" y="840" style="font-size: 20px">肉</text>
+        <text x="930" y="860" style="font-size: 20px">饭</text>
+        <text x="625" y="928" style="font-size: 20px">清补凉</text>
+        <text x="721" y="842">肠粉</text>
+        <text x="772" y="726">瓦</text>
+        <text x="772" y="756">罐</text>
+        <text x="772" y="786">汤</text>
+        <text x="793" y="593">牛</text>
+        <text x="793" y="623">肉</text>
+        <text x="793" y="653">汤</text>
+        <text x="678" y="456" style="font-size: 24px">刀</text>
+        <text x="678" y="480" style="font-size: 24px">削</text>
+        <text x="678" y="504" style="font-size: 24px">面</text>
+        <text x="602" y="526">肉</text>
+        <text x="602" y="556">夹</text>
+        <text x="602" y="586">馍</text>
+        <text x="530" y="455" style="font-size: 20px">羊</text>
+        <text x="530" y="475" style="font-size: 20px">杂</text>
+        <text x="530" y="495" style="font-size: 20px">碎</text>
+        <text x="409" y="304">牛</text>
+        <text x="409" y="334">肉</text>
+        <text x="409" y="364">面</text>
+        <text x="301" y="520">青稞</text>
+        <text x="453" y="660">毛血旺</text>
+        <text x="402" y="805">过桥米线</text>
+        <text x="569" y="839">螺蛳粉</text>
+        <text x="556" y="766" style="font-size: 28px">肠旺面</text>
+        <text x="577" y="691">火锅</text>
+        <text x="104" y="639">酥油茶</text>
+        <text x="163" y="288">羊肉串</text>
+        <text x="763" y="878" style="font-size: 14px">鸡蛋仔</text>
+        <text x="710" y="878" style="font-size: 14px">蛋挞</text>
+      </g>
+      <text id="分数" x="30" y="870" style="font-size: 50px">分数</text>
+      <g id="等级">
+        <path fill="#FF7E7E" d="M983,450h120v50h-120z"/>
+        <path fill="#FFB57E" d="M983,500h120v50h-120z"/>
+        <path fill="#FFE57E" d="M983,550h120v50h-120z"/>
+        <path fill="#A8FFBE" d="M983,600h120v50h-120z"/>
+        <path fill="#88AEFF" d="M983,650h120v50h-120z"/>
+        <path fill="#FFFFFF" d="M983,700h120v50h-120z"/>
+        <path class="level-border" d="M983,450h120v300h-120z"/>
+        <text x="1000" y="484" style="font-size: 24px">天天吃５</text>
+        <text x="1000" y="535" style="font-size: 24px">会做４</text>
+        <text x="1000" y="585" style="font-size: 24px">喜欢３</text>
+        <text x="1000" y="635" style="font-size: 24px">吃过２</text>
+        <text x="1000" y="685" style="font-size: 24px">害怕１</text>
+        <text x="998" y="735" style="font-size: 24px">没见过</text>
+      </g>
+    </svg>

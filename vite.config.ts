@@ -18,6 +18,7 @@ export default defineConfig({
       pages: [
         { path: '/' },
         { path: '/china-ex' },
+        { path: '/foodie-ex' },
         { path: '/robots.txt' },
         { path: '/sitemap.xml' },
       ],
