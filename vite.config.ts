@@ -20,6 +20,7 @@ export default defineConfig({
         { path: '/china-ex' },
         { path: '/foodie-ex' },
         { path: '/japan-ex' },
+        { path: '/us-ex' },
         { path: '/robots.txt' },
         { path: '/sitemap.xml' },
       ],

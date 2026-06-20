@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UsExRouteImport } from './routes/us-ex'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as JapanExRouteImport } from './routes/japan-ex'
@@ -16,6 +17,11 @@ import { Route as FoodieExRouteImport } from './routes/foodie-ex'
 import { Route as ChinaExRouteImport } from './routes/china-ex'
 import { Route as IndexRouteImport } from './routes/index'
 
+const UsExRoute = UsExRouteImport.update({
+  id: '/us-ex',
+  path: '/us-ex',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -54,6 +60,7 @@ export interface FileRoutesByFullPath {
   '/japan-ex': typeof JapanExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/us-ex': typeof UsExRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -62,6 +69,7 @@ export interface FileRoutesByTo {
   '/japan-ex': typeof JapanExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/us-ex': typeof UsExRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -71,6 +79,7 @@ export interface FileRoutesById {
   '/japan-ex': typeof JapanExRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/us-ex': typeof UsExRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -81,6 +90,7 @@ export interface FileRouteTypes {
     | '/japan-ex'
     | '/robots.txt'
     | '/sitemap.xml'
+    | '/us-ex'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -89,6 +99,7 @@ export interface FileRouteTypes {
     | '/japan-ex'
     | '/robots.txt'
     | '/sitemap.xml'
+    | '/us-ex'
   id:
     | '__root__'
     | '/'
@@ -97,6 +108,7 @@ export interface FileRouteTypes {
     | '/japan-ex'
     | '/robots.txt'
     | '/sitemap.xml'
+    | '/us-ex'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -106,10 +118,18 @@ export interface RootRouteChildren {
   JapanExRoute: typeof JapanExRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  UsExRoute: typeof UsExRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/us-ex': {
+      id: '/us-ex'
+      path: '/us-ex'
+      fullPath: '/us-ex'
+      preLoaderRoute: typeof UsExRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -162,6 +182,7 @@ const rootRouteChildren: RootRouteChildren = {
   JapanExRoute: JapanExRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  UsExRoute: UsExRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

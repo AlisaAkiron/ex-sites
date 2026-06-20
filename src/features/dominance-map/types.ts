@@ -45,6 +45,10 @@ export interface SiteConfig {
   brandBg: string
   regionGroupId: string
   scoreElementId: string
+  // Label the engine writes before the score (`<scoreLabel>: <n>`). Defaults to
+  // '分数' so the Chinese sites are unaffected; set it (e.g. 'Score') for an
+  // English map.
+  scoreLabel?: string
   // Text elements that float directly on the background (title + score) and
   // must flip to a light fill on a dark export background to stay legible.
   floatingTextIds: string[]

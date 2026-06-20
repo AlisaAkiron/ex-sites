@@ -69,9 +69,9 @@ export function DominanceMap({ config, onReady }: Props) {
     })
     const scoreEl = root.querySelector(`#${CSS.escape(config.scoreElementId)}`)
     if (scoreEl) {
-      scoreEl.textContent = `分数: ${score}`
+      scoreEl.textContent = `${config.scoreLabel ?? '分数'}: ${score}`
     }
-  }, [levels, score, config.regionGroupId, config.scoreElementId])
+  }, [levels, score, config.regionGroupId, config.scoreElementId, config.scoreLabel])
 
   // Mark the floating title/score text so page CSS ([data-floating-text]) can
   // tint it with the theme foreground on screen. The export bakes its own
